@@ -4,8 +4,11 @@ import {
   withItemData,
 } from "@keystone-next/keystone/session";
 import { createAuth } from "@keystone-next/auth";
+import dotenv from "dotenv";
 
 import { lists } from "./schema";
+
+dotenv.config();
 
 let sessionSecret = process.env.SESSION_SECRET;
 
