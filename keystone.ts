@@ -32,6 +32,9 @@ const auth = createAuth({
 
 export default auth.withAuth(
   config({
+    experimental: {
+      enableNextJsGraphqlApiEndpoint: true,
+    },
     db: {
       adapter: "prisma_postgresql",
       url:
